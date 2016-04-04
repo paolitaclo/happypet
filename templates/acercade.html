@@ -1,0 +1,34 @@
+{% import 'macros/common_macros.html' as common %}
+{% extends "layouts/base.html" %}
+{% block title %}Acerca de{% endblock %}
+
+{% block content %}
+<!-- First Band (Image) -->
+
+<!--
+<div class="row">
+  <div class="large-12 columns">
+    <img src="http://placehold.it/1000x400&text=[img]">
+
+    <hr>
+  </div>
+</div>
+-->
+<!-- Second Band (Image Left with Text) -->
+
+{% call common.band('historia', '/img/bands/family2.jpg', 'Historia') %}
+<p>Happy Pet fue creado a inicios del 2015 por personas amantes de perros, quienes no encontraban donde dejar a sus mascotas cuando salían de viaje, fundándose así este centro especializado en el cuidado de mascotas.</p>
+<p>Nuestra Misión es proveer el mejor servicio de cuidado a los perros y gatos, para la tranquilidad de sus amos.</p>
+{% endcall %}
+
+{% call common.band('staff', '/img/bands/guarderia.jpg', 'Nuestro Staff', '', true) %}
+<p>Conoce al Staff de Happy Pet, quienes fueron capacitados para atender las necesidades de tu mascota. Contamos desde veterinarios, estilistas y referis para el área de juegos.</p>
+<p>Ellos, al igual que tú, son amantes de los animales y disfrutan de su trabajo alrededor de ellos.</p>
+{% endcall %}
+
+
+
+
+
+
+{% endblock %}

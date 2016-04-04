@@ -1,0 +1,85 @@
+{% import 'macros/common_macros.html' as common %}
+{% extends "layouts/base.html" %}
+{% block title %}Inicio{% endblock %}
+
+{% block content %}
+<!--
+<div class="row small-collapse">
+  <div class="small-12 columns">
+    <div id="slider">
+      <div><img src="img/slides/slide2.jpg"/></div>
+      <div><img src="img/slides/slide1.jpg"/></div>
+      <div><img src="img/slides/slide3.jpg"/></div>
+      <div><img src="img/slides/slide4.jpg"/></div>
+    </div>
+  </div>
+</div>
+-->
+
+<div id="welcome-image" class="row small-collapse">
+<!--
+  <div class="small-4 small-offset-1 columns welcome-box">
+    <p>Bienvenidos a Happy Pet, el lugar más exclusivo de Santa Cruz de la Sierra para los más consentidos de la casa. Contamos con limpias y amplias instalaciones de primer nivel, para brindar a nuestros peludos una experiencia inolvidable.</p>
+    <p class="welcome-secondary">Entendemos que dejar a nuestros peludos en casa, solos y encerrados, puede causarles mucha ansiedad, más aún cuando nos vamos de vacaciones y no tenemos con quien dejarlos. Es por eso, que Happy Pet abre sus puertas para solucionarles este problema.</p>
+  </div>
+-->
+</div>
+
+
+<div class="row intro" id="intro">
+  
+  <div class="band-image small-12  medium-4 columns intro">
+    <img src="/img/bands/MainEntrance.jpg">
+  </div>
+  
+  <div class="small-12 medium-4 columns intro">
+    <p>Bienvenidos a Happy Pet, el lugar más exclusivo de Santa Cruz de la Sierra para los más consentidos de la casa. Contamos con limpias y amplias instalaciones de primer nivel, para brindar a nuestros peludos una experiencia inolvidable.</p>
+  </div>
+  
+  <div class="small-12 medium-4 columns intro">
+    <p>Entendemos que dejar a nuestros peludos en casa, solos y encerrados, puede causarles mucha ansiedad, más aún cuando nos vamos de vacaciones y no tenemos con quien dejarlos. Es por eso, que Happy Pet abre sus puertas para solucionarles este problema.</p>
+  </div>
+</div>
+
+
+<!--
+<div id="intro" class="row middle">
+  <div class="small-8 small-centered columns">
+    <p>Bienvenidos a Happy Pet, el lugar más exclusivo de Santa Cruz de la Sierra para los más consentidos de la casa. Contamos con limpias y amplias instalaciones de primer nivel, para brindar a nuestros peludos una experiencia inolvidable.</p>
+    <p>Entendemos que dejar a nuestros peludos en casa, solos y encerrados, puede causarles mucha ansiedad, más aún cuando nos vamos de vacaciones y no tenemos con quien dejarlos. Es por eso, que Happy Pet abre sus puertas para solucionarles este problema.</p>
+  </div>
+</div>
+-->
+
+{% call common.band('hotel', '/img/bands/hotel.jpg', 'Hotel para Perros y Gatos', '/hotel') %}
+<p>Por fin podemos darles a nuestras mascotas una mejor opción que quedarse en casa, aburrida, solas, rasgando un cojín del sofá, buscando qué morder, angustiarse o deprimirse por la ausencia de su familia, o ser paseadas por gente extraña con la inseguridad de las calles. No importa si está oscuro, frío, caluroso o lloviendo, en Happy Pet tenemos opciones cómodas para tí y tu mascota.
+</p>
+<p>Visita nuestras instalaciones para que conozca de cerca los beneficios que tu mascota puede tener.</p>
+{% endcall %}
+
+{% call common.band('guarderia', '/img/bands/guarderia.jpg', 'Guardería', '/guarderia') %}
+<p>Happy Pet ofrece el servicio de guardería indoor para que tu mascota no esté expuesta a los riesgos de la calle, ni se limite a jugar en días de lluvia, frío o extremo calor.</p>
+<p>Nuestros parques ofrecen un ambiente limpio, sano y seguro; donde tu mascota disfrutará jugar, distraerse, estimular su mente, moverse libremente como si estuviera en casa, tendrá convivencia con otros perros sanos.</p>
+{% endcall %}
+
+{% call common.band('spa', '/img/bands/spa.jpg', 'Spa', '/') %}
+<p>Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong. Eiusmod swine spare ribs reprehenderit culpa. Boudin aliqua adipisicing rump corned beef.</p>
+{% endcall %}
+
+<div class="row small-collapse">
+  <div class="small-12 columns">
+    <div class="panel">
+      <h4>Get in touch!</h4>
+      <div class="row">
+        <div class="small-9 columns">
+          <p>We'd love to hear from you, you attractive person you.</p>
+        </div>
+        <div class="small-3 columns">
+          <a href="#" class="radius button right">Contáctanos</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+{% endblock %}

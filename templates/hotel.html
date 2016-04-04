@@ -1,0 +1,63 @@
+{% import 'macros/common_macros.html' as common %}
+{% extends "layouts/base.html" %}
+{% block title %}Hotel{% endblock %}
+
+{% block content %}
+<!-- First Band (Image) -->
+
+<div class="row small-collapse">
+  <div class="small-12 columns">
+    <div id="slider">
+      <div><img src="img/slides/slide2.jpg"/></div>
+      <div><img src="img/slides/slide1.jpg"/></div>
+      <div><img src="img/slides/slide3.jpg"/></div>
+      <div><img src="img/slides/slide4.jpg"/></div>
+    </div>
+  </div>
+</div>
+
+<!-- Intro -->
+<div id="intro" class="row middle">
+  <div class="small-8 small-centered columns">
+    <p>Happy Pet cuenta con la mejor opción de hospedaje de mascotas en Bolivia.</p>
+    <p>Cuando salgas de viaje tu mascota no tiene por qué quedarse sola en casa, con nosotros estarán atendidos por personas amantes de los animales atendiendo sus necesidades de limpieza, comodidad, diversión, descanso, salud y seguridad.</p>
+  </div>
+</div>
+
+<!-- Second Band (Image Left with Text) -->
+
+{% call common.band('hotel', '/img/bands/hotel.jpg', 'Para los perritos') %}
+<p>Contamos con suites amplias con camas confortables hipoalergénicas para que tu mascota se sienta como en su casa.</p>
+<p>Nuestro servicio de hospedaje incluye alimentación con el alimento adecuado para su raza y edad, y 2 horas de juego (una hora en la mañana y una hora en la tarde) en cualquiera de nuestros parques.</p>
+<p>También ofrecemos habitaciones Master Suites, para que tu mascota disfrute de un espacio privado más amplio, TV con programación adecuada para mascotas, además de su alimentación. este tipo de habitación incluye nuestro servicio de Día de juego.</p>
+{% endcall %}
+
+{% call common.band('hotel', '/img/bands/hotel.jpg', 'Para los gatitos') %}
+<p>Contamos con un espacio diseñado especialmente para los gatos, con habitaciones aptas para su propia distracción.</p>
+<p>Incluye alimentación y 2 veces al día (15 minutos c/u) de adulo por nuestro personal.</p>
+{% endcall %}
+
+<!--
+<div class="row">
+  <div class="large-4 columns">
+    <img src="http://placehold.it/400x300&text=[img]">
+  </div>
+  <div class="large-8 columns">
+    <h4>PARA LOS PERRITOS</h4>
+    <div class="row">
+      <div class="large-6 columns">
+        <p>Contamos con suites amplias con camas confortables hipoalergénicas para que tu mascota se sienta como en su casa.</p>
+        <p>Nuestro servicio de hospedaje incluye alimentación con el alimento adecuado para su raza y edad, y 2 horas de juego (una hora en la mañana y una hora en la tarde) en cualquiera de nuestros parques.</p>
+      </div>
+      <div class="large-6 columns">
+        <p>También ofrecemos habitaciones Master Suites, para que tu mascota disfrute de un espacio privado más amplio, TV con programación adecuada para mascotas, además de su alimentación. este tipo de habitación incluye nuestro servicio de Día de juego. <a href="/guarderia">(Ver sección de guardería)</a>.</p>
+        
+      </div>
+    </div>
+  </div>
+</div>
+-->
+
+
+
+{% endblock %}

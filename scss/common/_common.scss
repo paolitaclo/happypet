@@ -1,0 +1,252 @@
+//$color1: #F2007D;
+//$color2: #27BAF9;
+//$color3: #EDF411;
+
+$color1: #CC333F;
+$font-color1: #F8F8F8;
+$color2: #00A0B0;
+$color3: #EDC951;
+$color4: #f6f6f6;
+$color5: #ffffff;
+%band-base {
+  padding: 50px;
+  
+  .band-image > img {
+    box-shadow: 0px 7px 1em black;
+  }
+}
+
+%band-style-1 {
+  background: $color1;
+  color: #FFF;  
+}
+
+%band-style-2 {
+  background: $color2;
+  color: #FFF;
+}
+
+%band-style-3 {
+  background: $color3;
+}
+
+#main-container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: initial;
+  overflow-x: hidden;
+}
+
+#top{
+  background: #F0FBFD;
+  height: 200px;
+}
+
+.logo-container {
+  padding: 5px 0 0 50px;
+  height: 200px;
+  
+  a, img {
+    display: inline-block;
+    height: 221px;
+  }
+}
+
+.name-container{
+  padding-top: 45px;
+  padding-left: 40px;
+}
+
+#navbar{
+  width: auto;
+  font-size: 30px;
+}
+
+nav.top-bar{
+  text-align: center;
+}
+
+section.top-bar-section{
+  display: inline-block;
+}
+
+#content{
+  width: 100%;
+}
+
+#welcome-image {
+  height: 50vw;
+  background-image: url(/img/slides/slide1.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: flex;
+  align-items: center;
+}
+
+.welcome-box {
+  background-color: rgba($black, 0.3);
+  color: $white;
+  padding-top: 15px;
+  font-family: Roboto, "Lucida Sans", Helvetica, sans-serif;
+  max-height: 50vw;
+  overflow: hidden;
+  
+  
+  p {
+    padding: 0 10px 0 15px;
+    font-size: 0.5rem;
+  }
+  
+  .welcome-secondary {
+    display: none;
+  }
+}
+
+.title-area {
+  height: 100%;
+}
+
+@media #{$small-only} {   
+  .expanded section.top-bar-section {
+    width: 100%;
+  }
+}
+
+#socialred{
+  li{
+    width: 65px;
+  }
+}
+
+@media #{$medium-up} { 
+  .welcome-box > p {
+    font-size: 0.9rem;
+  }
+}
+
+@media #{$large-up} { 
+  .welcome-box {
+    padding-top: 30px;
+    p {
+      font-size: 1.1rem;
+    }
+    .welcome-secondary {
+      display: block;
+    }
+  }  
+}
+
+
+
+#slider{
+  top: 10px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  position: initial;
+}
+
+.band-title {
+  font-size: 28px;
+  font-family: Roboto, "Lucida Sans", Helvetica, sans-serif;
+  font-weight: 300;
+  padding-bottom: 15px;
+}
+
+.band-image {
+}
+
+.band-info { 
+}
+
+
+
+//.top-bar-section ul li>a
+
+//#intro{
+//  padding: 20px 0 0;
+//}
+
+#intro{
+  @extend %band-base;
+  p{
+    font-size: 22px;
+  }
+}
+
+#hotel{
+  @extend %band-base;
+  @extend %band-style-3;
+}
+#guarderia {
+  @extend %band-base;
+  @extend %band-style-2;
+}
+#spa {
+  @extend %band-base;
+  @extend %band-style-1;
+}
+
+//aboutus
+#historia{
+  background: $color4;
+  padding: 50px;
+  img{
+    box-shadow: 0px 7px 1em black;
+    border-radius: 50%;
+  }
+}
+
+#staff{
+  background: $color5;
+  padding: 50px;
+  img{
+    box-shadow: 0px 7px 1em black;
+    border-radius: 50%;
+  }
+}
+
+
+//gallery
+.gallery {
+  background: $black;
+}
+#bestdog{
+  padding: 0px 0px 0px 0px;
+}
+
+#gallery{
+//  background: pink; 
+  //background-color: rgba(10, 10, 10, 0.4);
+  .item {
+    width: 33%;
+    margin-bottom: 10px;
+  }
+}
+
+
+
+#slidedog{
+background-color: black;
+}
+
+
+
+/* Media Queries-------------*/
+//
+//@media (max-width: 460px){
+//  .intro,
+//  .hotel,
+//  .guarderia,
+//  .spa{
+//    font-size: 8px;
+//    padding-left: 0;
+//    padding-right: 0;
+//    }
+//}
+
+
+
+
+

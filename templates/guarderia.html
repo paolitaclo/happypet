@@ -1,0 +1,33 @@
+{% import 'macros/common_macros.html' as common %}
+{% extends "layouts/base.html" %}
+{% block title %}Guarderia{% endblock %}
+
+{% block content %}
+<!-- First Band (Image) -->
+
+<!--
+<div class="row">
+  <div class="large-12 columns">
+    <img src="http://placehold.it/1000x400&text=[img]">
+
+    <hr>
+  </div>
+</div>
+-->
+<!-- Second Band (Image Left with Text) -->
+
+{% call common.band('guarderia', '/img/bands/guarderia.jpg', 'Happy Pet Guardería') %}
+<p>En HAPPY PET tu mascota viene a correr, jugar y también a divertirse con sus amigos de guardería y hotel en la piscina, cuando el clima esté adecuado. Por lo tanto es muy probable que tu mascota regrese a casa cansado y también un poco sucio, así que te recomendamos que lo pidas bañado para que regrese limpio a casa.</p>
+<p>Las mascotas serån incluidas en grupos de acuerdo a su tamaño, para así promover un juego sano y agradable para todos. Nuestro personal brindará supervisión constante a cada grupo.</p>
+{% endcall %}
+
+{% call common.band('guarderia', '/img/bands/guarderia.jpg', 'lalal','',true) %}
+<p>Nuestros parques no tienen pasto, ya que en éste habitan pulgas, garrapatas o diferentes tipos de bacterias, también a algunas mascotas les gusta comer pasto lo que les puede provocar vómito, lo cual no sería nada agradable.</p>
+<p>Nuestros parques cuentan con estaciones de juego, juguetes, tapetes, camastros, agua limpia para beber y personal pendientes de ellos en todo momento.</p>
+{% endcall %}
+
+
+
+
+
+{% endblock %}

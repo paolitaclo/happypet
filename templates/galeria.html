@@ -1,0 +1,83 @@
+{% import 'macros/common_macros.html' as common %}
+{% extends "layouts/base.html" %}
+{% block title %}Galería{% endblock %}
+{% block contentClass %}gallery{% endblock %}
+{% block scripts %}
+<script src="bower_components/masonry/dist/masonry.pkgd.js"></script>
+<script type="text/javascript" src="js/gallery.js"></script>
+{% endblock %}
+
+{% block content %}
+<!-- First Band (Image) -->
+<div class="small-12 small-centered columns">
+  <div id="gallery">
+    <div class="item"><a href="/img/gallery/galery2.jpg" class="th"><img src="/img/gallery/galery2.jpg"></a></div>
+    <div class="item"><a href="/img/gallery/galery3.jpg" class="th"><img src="/img/gallery/galery3.jpg"></a></div>
+    <div class="item"><a href="/img/gallery/galery4.jpg" class="th"><img src="/img/gallery/galery4.jpg"></a></div>
+    <div class="item"><a href="/img/gallery/galery5.jpg" class="th"><img src="/img/gallery/galery5.jpg"></a></div>
+    <div class="item"><a href="/img/gallery/gallery6.jpg" class="th"><img src="/img/gallery/gallery6.jpg"></a></div>
+    <div class="item"><a href="/img/gallery/gallery7.jpg" class="th"><img src="/img/gallery/gallery7.jpg"></a></div>
+    <div class="item"><a href="/img/gallery/gallery8.jpg" class="th"><img src="/img/gallery/gallery8.jpg"></a></div>
+    <div class="item"><a href="/img/gallery/gallery9.jpg" class="th"><img src="/img/gallery/gallery9.jpg"></a></div>
+    <div class="item"><a href="/img/gallery/gallery10.jpg" class="th"><img src="/img/gallery/gallery10.jpg"></a></div>
+    <div class="item"><a href="/img/gallery/gallery11.jpg" class="th"><img src="/img/gallery/gallery11.jpg"></a></div>
+  </div>
+
+</div>
+
+<!--
+<div class="gallery">
+  
+  <div class=""></div>
+</div>
+-->
+
+
+<!--
+<div class="row">
+  <div class="small-8 small-centered columns">
+    <div id="slider">
+      <div><img src="/img/slides/slide1.jpg" ></div>
+      <div><img src="/img/slides/slide2.jpg" ></div>
+      <div><img src="/img/slides/slide3.jpg" ></div>
+      <div><img src="/img/slides/slide4.jpg" ></div>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="small-8 small-centered columns" id="gallery">
+    <ul class="clearing-thumbs" data-clearing>
+      <li><a href="/img/gallery/galery2.jpg" class="th"><img src="/img/gallery/galery2-th.jpg"></a></li>
+      <li><a href="/img/gallery/galery3.jpg" class="th"><img src="/img/gallery/galery3-th.jpg"></a></li>
+      <li><a href="/img/gallery/galery4.jpg" class="th"><img src="/img/gallery/galery4-th.jpg"></a></li>
+      <li><a href="/img/gallery/galery5.jpg" class="th"><img src="/img/gallery/galery5-th.jpg"></a></li>
+      <li><a href="/img/gallery/gallery6.jpg" class="th"><img src="/img/gallery/gallery6-th.jpg"></a></li>
+      <li><a href="/img/gallery/gallery7.jpg" class="th"><img src="/img/gallery/gallery7-th.jpg"></a></li>
+      <li><a href="/img/gallery/gallery8.jpg" class="th"><img src="/img/gallery/gallery8-th.jpg"></a></li>
+      <li><a href="/img/gallery/gallery9.jpg" class="th"><img src="/img/gallery/gallery9-th.jpg"></a></li>
+      <li><a href="/img/gallery/gallery10.jpg" class="th"><img src="/img/gallery/gallery10-th.jpg"></a></li>
+      <li><a href="/img/gallery/gallery11.jpg" class="th"><img src="/img/gallery/gallery11-th.jpg"></a></li>
+    </ul>
+  </div>
+</div>
+
+<div class="row">
+  <div class="small-8 small-centered columns">
+    <div class="pagination-centered">
+      <ul class="pagination">
+          <li class="arrow unavailable"><a href="">&laquo;</a></li>
+          <li class="current"><a href="">1</a></li>
+          <li><a href="">2</a></li>
+          <li><a href="">3</a></li>
+          <li><a href="">4</a></li>
+          <li class="unavailable"><a href="">&hellip;</a></li>
+          <li><a href="">12</a></li>
+          <li><a href="">13</a></li>
+          <li class="arrow"><a href="">&raquo;</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+-->
+{% endblock %}

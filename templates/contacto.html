@@ -1,0 +1,41 @@
+{% import 'macros/common_macros.html' as common %}
+{% extends "layouts/base.html" %}
+{% block title %}Contacto{% endblock %}
+
+{% block content %}
+
+<div class="row">
+  <div class="small-12 medium-8 columns">
+    <form>
+      <div class="row">
+        <div class="large-12 columns">
+          <label>Nombre
+            <input type="text" placeholder="large-12.columns" />
+          </label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="large-12 columns">
+          <label>Correo electrónico
+            <input type="text" placeholder="large-12.columns" />
+          </label>
+        </div>
+      </div>
+        <div class="large-12 columns">
+          <label>Mensaje
+            <textarea placeholder="small-12.columns"></textarea>
+          </label>
+        </div>
+    </form>
+  </div>
+  
+  <div class="small-12 medium-4 columns">
+    <ul>
+      <li>Dirección: Av. Santa Cruz, 2do. Anillo #908</li>
+      <li><a href="tel:3335-6060">Teléfono: 3335-6060</a></li>
+    </ul>  
+  </div>
+  
+</div>
+
+{% endblock %}

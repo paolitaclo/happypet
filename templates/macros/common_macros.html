@@ -1,0 +1,36 @@
+{% macro imgBlock(img) %}
+<div class="band-image small-12 medium-4 columns">
+  <img src="{{ img }}" />
+</div>
+{% endmacro %}
+
+{% macro band(id, img='http://placehold.it/400x300&text=[img]', title, link='', invert=False) -%}
+<div class="row" id="{{ id }}">
+  
+  {% if not invert %}
+  {{ imgBlock(img) }}
+  {% endif %}  
+  
+  <div class="band-info small-12 medium-8 columns">
+    <div class="row">
+      <div class="small-12 columns">
+        <div class="band-title">{{ title }}</div>
+        {{ caller() }}
+      </div>
+    </div>
+    {% if link|length>0 %}
+    <div class="row">
+      <div class="small-12 columns">
+        <p><a href="{{ link }}" class="button">Ver más</a></p>
+      </div>
+    </div> 
+    {% endif %} 
+  </div>
+  
+  {% if invert %}
+  {{ imgBlock(img) }}
+  {% endif %}  
+  
+</div>
+{%- endmacro %}
+
